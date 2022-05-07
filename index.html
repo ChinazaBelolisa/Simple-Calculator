@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h3>Simple calculator</h3>
+            <div>
+              <div class="mb-3">
+                <label for="first-num" class="form-label">First Number</label>
+                <input type="text" class="form-control" id="first-num" aria-describedby="first number">
+                <div id="first-num-help" class="form-text">Please enter a number</div>
+              </div>
+              <div class="mb-3">
+                <label for="second-num" class="form-label">Second Number</label>
+                <input type="text" class="form-control" id="second-num" aria-describedby="second number">
+                <div id="first-num-help" class="form-text">Please enter a number</div>
+              </div>
+              <div class="mb-3">
+                <label for="math-operation" class="drop-label">Choose an arthmetic operation</label>
+                <select class="drop-select" aria-label="arithmetic operation" id="math-operator">
+                  <option selected>Select Operation</option>
+                  <option value="add">+</option>
+                  <option value="sub">-</option>
+                  <option value="div">/</option>
+                  <option value="mult">*</option>
+                  <option value="mod">%</option>
+                </select>
+                </div>
+              <button id="btn-calculate" class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+          <div id="result-col" class="col-6 text-center">
+            <br>
+            <h3><span>Result</span></h3>
+            <h2 id="result" class="display-3 text-center text-primary"><span>--</span></h2>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
